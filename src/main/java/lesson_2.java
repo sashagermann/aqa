@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class lesson_2 {
-
     public static void main(String[] args) {
 
         printThreeWords(); // Задание 1
@@ -19,7 +18,6 @@ public class lesson_2 {
         arrayLower6(); // Задание 12
         matrix3X3(); // Задание 13
         arrayInitialValue(); // Задание 14
-
     }
 
     // Задание 1
@@ -178,5 +176,4 @@ public class lesson_2 {
         }
         System.out.println(Arrays.toString(array4));
     }
-
 }
