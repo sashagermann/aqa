@@ -14,11 +14,14 @@ public class Main {
         System.out.println("Собак: " + Dog.countDogs);
         System.out.println("Котов: " + Cat.countCats);
 
-        Bowl bowl = new Bowl(45);
+        Bowl bowl = new Bowl(35);
 
         Cat[] cats = {new Cat("Мурка"), new Cat("Барсик"), new Cat("Снежок"), new Cat("Рыжик")};
 
         System.out.println("\nКормим котов:");
+        bowl.infoBowl();
+        System.out.println("Добавляем еды:");
+        bowl.addFood(25);
         bowl.infoBowl();
 
         int[] appetites = {10, 20, 10, 15};

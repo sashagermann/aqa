@@ -7,6 +7,13 @@ public class Bowl {
         this.food = food;
     }
 
+    public void addFood(int amount) {
+        if (amount > 0) {
+            this.food += amount;
+            System.out.println("В миску добавили " + amount + " грамм еды");
+        }
+    }
+
     public boolean decreaseFood(int amount) {
         if (amount <= food) {
             food -= amount;
