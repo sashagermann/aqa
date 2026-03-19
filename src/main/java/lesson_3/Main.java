@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Задание 1:");
         for (int i = 0; i < productsArray.length; i++) {
             System.out.println("\nТовар №" + (i + 1));
-            productsArray[i].printInfo();
+            System.out.println(productsArray[i]);
         }
 
         Park.ParkAddress location = new Park.ParkAddress("Гомель", "Советская", 1);
@@ -23,8 +23,8 @@ public class Main {
         Park.Attraction attr3 = myPark.new Attraction("Американские горки", "12:00 - 19:00", 15);
 
         System.out.println("\nЗадание 2:");
-        attr1.printInfo();
-        attr2.printInfo();
-        attr3.printInfo();
+        System.out.println(attr1);
+        System.out.println(attr2);
+        System.out.println(attr3);
     }
 }

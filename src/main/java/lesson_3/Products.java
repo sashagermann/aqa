@@ -17,9 +17,10 @@ public class Products {
         this.bookingStatus = bookingStatus;
     }
 
-    public void printInfo() {
-        System.out.println("Название товара: " + productName + "\nДата производства: " +
+    @Override
+    public String toString() {
+        return "Название товара: " + productName + "\nДата производства: " +
                 prodDate + "\nПроизводитель: " + manufacturer + "\nСтрана происхождения: " +
-                prodCountry + "\nЦена: " + price + "$" + "\nCостояние бронирования покупателем: " + bookingStatus);
+                prodCountry + "\nЦена: " + price + "$" + "\nСостояние бронирования покупателем: " + bookingStatus;
     }
 }

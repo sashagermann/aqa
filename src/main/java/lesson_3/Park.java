@@ -38,11 +38,12 @@ public class Park {
             this.price = price;
         }
 
-        public void printInfo() {
-            System.out.println("Парк: " + parkName + " Время работы: " + parkHours);
-            System.out.println("Адрес: " + address.getFullAddress());
-            System.out.println("Аттракцион: " + attrName + " (Работает: " + attrHours + ")");
-            System.out.println("Цена: " + price + "$\n");
+        @Override
+        public String toString() {
+            return "Парк: " + parkName + " Время работы: " + parkHours +
+                    "\nАдрес: " + address.getFullAddress() +
+                    "\nАттракцион: " + attrName + " (Работает: " + attrHours + ")" +
+                    "\nЦена: " + price + "$";
         }
     }
 }
